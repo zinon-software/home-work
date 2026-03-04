@@ -1,0 +1,258 @@
+/* =============================================
+   مؤسسة المشرقي - تحسينات بسيطة على التصميم
+   ============================================= */
+
+/* ── الخط العربي ── */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+body {
+  font-family: 'Cairo', 'Akatab', sans-serif;
+  color: #2d2d2d;
+  background: #fff;
+}
+
+/* ── شريط التنقل ── */
+.navbar {
+  padding: 14px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: -.01em;
+}
+
+.navbar-brand::after {
+  content: ' مؤسسة المشرقي';
+  display: inline;
+}
+
+.nav-link, .navbar-nav a {
+  font-size: .93rem;
+  font-weight: 600;
+  padding: 6px 14px !important;
+  transition: color .2s;
+}
+
+.navbar-dark .nav-link:hover,
+.collapse a:hover { color: #f0c040 !important; }
+
+.btn-primary {
+  background: #c4922a;
+  border-color: #c4922a;
+  border-radius: 20px;
+  padding: 7px 22px;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background: #a37a22;
+  border-color: #a37a22;
+}
+
+/* ── Hero / صفحة رئيسية ── */
+h1.text-uppercase {
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #1a1a1a;
+  padding: 60px 20px 20px !important;
+  line-height: 1.3;
+}
+
+/* ── العناوين ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+h2 { font-size: 1.9rem; color: #1a1a1a; }
+h3 { font-size: 1.4rem; }
+
+/* ── البطاقات والصور ── */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 14px rgba(0,0,0,.09);
+  transition: transform .25s, box-shadow .25s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.14);
+}
+
+.card-body { padding: 20px; }
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.card-text { font-size: .9rem; color: #555; line-height: 1.7; }
+
+/* صور مقطوعة بشكل صحيح */
+.fit-cover { object-fit: cover; }
+
+.rounded, .img-fluid {
+  border-radius: 8px !important;
+}
+
+/* ── الأقسام ── */
+section, .section {
+  padding: 60px 0;
+}
+
+.bg-light { background: #f8f6f3 !important; }
+
+/* ── الأزرار ── */
+.btn {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: all .25s;
+}
+
+.btn-sm { padding: 6px 18px; font-size: .85rem; }
+
+/* ── فريق العمل ── */
+.img-thumbnail {
+  border: none;
+  border-radius: 50% !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+  object-fit: cover;
+}
+
+/* ── آراء العملاء ── */
+.blockquote {
+  border-right: 4px solid #c4922a;
+  padding-right: 16px;
+  font-style: italic;
+}
+
+/* ── نموذج التواصل ── */
+.form-control {
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  padding: 10px 14px;
+  transition: border-color .2s;
+}
+
+.form-control:focus {
+  border-color: #c4922a;
+  box-shadow: 0 0 0 3px rgba(196,146,42,.15);
+}
+
+/* ── السلايدر ── */
+.simple-slider .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #c4922a !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c4922a !important;
+}
+
+/* ── فوتر ── */
+footer, .footer-dark {
+  background: #1a1a1a !important;
+  color: rgba(255,255,255,.7);
+  padding: 40px 0 20px;
+}
+
+footer h4, footer h5, footer .footer-dark h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+footer a, .footer-dark a {
+  color: rgba(255,255,255,.65) !important;
+  font-size: .88rem;
+  transition: color .2s;
+}
+
+footer a:hover, .footer-dark a:hover {
+  color: #c4922a !important;
+  text-decoration: none;
+}
+
+footer p, .footer-dark p {
+  font-size: .88rem;
+  line-height: 1.8;
+}
+
+footer hr { border-color: rgba(255,255,255,.1); }
+
+/* ── أيقونات السوشال ── */
+.bs-icon {
+  background: #c4922a !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  transition: background .2s, transform .2s;
+}
+
+.bs-icon:hover {
+  background: #a37a22 !important;
+  transform: translateY(-2px);
+}
+
+.bs-icon-circle { border-radius: 50% !important; }
+
+/* ── جدول / قائمة منتجات ── */
+.row .rounded.img-fluid.w-100 {
+  box-shadow: 0 3px 12px rgba(0,0,0,.1);
+  transition: transform .3s, box-shadow .3s;
+}
+
+.row .rounded.img-fluid.w-100:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,.16);
+}
+
+/* ── فاصل خفيف بين الأقسام ── */
+hr { border-top: 1px solid #eee; }
+
+/* ── تحسين RTL ── */
+.text-right { text-align: right !important; }
+.mr-auto    { margin-right: auto !important; margin-left: 0 !important; }
+.ml-auto    { margin-left:  auto !important; margin-right: 0 !important; }
+
+/* ── Parallax header للصفحة الرئيسية ── */
+.hero-section {
+  background: url('../img/project-1.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.52);
+  border-radius: 0;
+}
+.hero-section h1,
+.hero-section p {
+  position: relative;
+  z-index: 1;
+  color: #fff !important;
+}
+
+/* ── تجاوبية ── */
+@media (max-width: 768px) {
+  h1.text-uppercase { font-size: 1.5rem; padding: 36px 16px 12px !important; }
+  section, .section  { padding: 40px 0; }
+  .navbar-brand::after { font-size: 1rem; }
+}
